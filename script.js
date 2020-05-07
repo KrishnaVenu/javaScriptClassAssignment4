@@ -136,17 +136,33 @@ const findLarge=getEl('#findLarge');
 findLarge.addEventListener('click',findLarger);
 
 //eightth Question.
+
+// bubble sort function
+const sortAlphabetical=(arr)=>{
+    for(let i=0;i<arr.length-1;i++){
+        for(let j=0;j<arr.length-i-1;j++){
+            if(arr[j].name>arr[j+1].name){
+                let temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+}
 const sortBtn=getEl('#sort');
 sortBtn.addEventListener('click',(e)=>{
     const inputString=getEl('#stringInput8').value;
     const inputArray=inputString.split(',');
-    inputArray.sort();
+    const inputObjectArray=inputArray.map((el)=>{return {name:el};});
+    console.log(inputObjectArray);
+    sortAlphabetical(inputObjectArray);
+    console.log(inputObjectArray);
     const ul=document.createElement('ul');
     const eightthAnswer=getEl('#eightthAnswer');
     eightthAnswer.appendChild(ul);
     output=``;
-    for(el in inputArray){
-        output+=`<li>${inputArray[el]} </li>`
+    for(el in inputObjectArray){
+        output+=`<li>${inputObjectArray[el].name} </li>`
     }
     ul.innerHTML=output;
     eightthAnswer.classList.remove('hidden');
