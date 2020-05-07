@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 4</title>
+</head>
+<body>
+    <h1 class="text-center text-primary" >Class Exercises on JavaScript- Assignment 4</h1>
+    <hr> 
+    <h5 class="mt-5">Q1-Write a JavaScript function to get an array and to read the first element of an array. Check whether it is prime or not.</h5>   
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">array</span>
+        </div>
+        <input type="text" class="form-control" id="arrayInput" placeholder="array elements seperated by," aria-label="array elements seperated by," aria-describedby="basic-addon1">
+    <button class="btn btn-primary mx-3" id="checkPrime"> check prime</button>  
+    </div>
+    <div class="hidden text-primary" id="firstAnswer"></div>
+    
+    
+    <h5 class="mt-5"> Q2-Write a JavaScript program to find the most frequent item of an array.</h5>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2">array</span>
+        </div>
+        <input type="text" class="form-control" id="arrayInput2" placeholder="array elements seperated by," aria-label="array elements seperated by," aria-describedby="basic-addon1">
+    <button class="btn btn-primary mx-3" id="mostFrequent"> Find Most Frequent</button>  
+    </div>
+    <div class="hidden text-primary" id="secondAnswer"></div>
+    
+    <h5 class="mt-5"> Q3- Write a JavaScript program which accept a string as input and swap the case of each character.
+    </h5>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2">string</span>
+        </div>
+        <input type="text" class="form-control" id="stringInput3" placeholder="Enter a string with Mixed Case" aria-label="Enter a string with Mixed Case" aria-describedby="basic-addon1">
+    <button class="btn btn-primary mx-3" id="changeCase"> Change Case</button>  
+    </div>
+    <div class="hidden text-primary" id="thirdAnswer"></div>
+   
+
+    <h5 class="mt-5"> Q4-Write a JavaScript program to find the sum of squares of the elements of an array.</h5>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2">array</span>
+        </div>
+        <input type="text" class="form-control" id="arrayInput4" placeholder="array elements seperated by," aria-label="array elements seperated by," aria-describedby="basic-addon1">
+    <button class="btn btn-primary mx-3" id="sumOfSquares">Sum of Squares of Elemnts</button>  
+    </div>
+    <div class="hidden text-primary" id="fourthAnswer"></div>
+
+
+    <h5 class="mt-5"> Q5-Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, check if the current number is odd or even, and display the message to the screen as odd or even.</h5>
+    <div class="input-group mb-3">
+        
+    <button class="btn btn-primary mx-3" id="btn5">Generate o/p</button>  
+    </div>
+    <div class="hidden text-primary" id="fifthAnswer"></div>
+
+
+    <h5 class="mt-5"> Q6-Write a JavaScript function to truncate a string if it is longer than the specified number of characters.</h5>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2">string</span>
+        </div>
+        <input type="text" class="form-control" id="stringInput6" placeholder="string input" aria-label="string input" aria-describedby="basic-addon1">
+        <input type="number" class="form-control ml-5" placeholder="character limit" id="lengthLimit" >
+    <button class="btn btn-primary mx-3" id="truncate">Truncate</button>  
+    </div>
+    <div class="hidden text-primary" id="sixthAnswer"></div>
+    
+    
+    
+    <h5 class="mt-5"> Q7-Write a JavaScript program that accept two integers and display the larger using findLarge() function.</h5>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2">number</span>
+        </div>
+        <input type="number" class="form-control" id="num1" placeholder="enter a number" aria-label="enter a number" aria-describedby="basic-addon1">
+        <div class="input-group-prepend">
+          <span class="input-group-text ml-5" id="basic-addon2">number</span>
+        </div>
+        <input type="number" class="form-control" id="num2" placeholder="enter a number" aria-label="enter a number" aria-describedby="basic-addon1">
+        
+    <button class="btn btn-primary mx-3" id="findLarge">find bigger</button>  
+    </div>
+    <div class="hidden text-primary" id="seventhAnswer"></div>
+
+
+    <h5 class="mt-5"> Q8- Write a JavaScript program using for…in to read the objects from an array entered by an user and to arrange it in alphabetical order.
+    </h5>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2">string</span>
+        </div>
+        <input type="text" class="form-control" id="stringInput8" placeholder="enter some names separated by ," aria-label="enter some names separated by ," aria-describedby="basic-addon1">
+    <button class="btn btn-primary mx-3" id="sort"> sort</button>  
+    </div>
+    <div class="hidden text-primary" id="eightthAnswer"></div>
+
+
+    <h5 class="mt-5"> Q9-Write a JavaScript program to print the letters of the word “Javascript” as below in each line using for…of.</h5>
+    <div class="input-group mb-3">
+        
+    <button class="btn btn-primary mx-3" id="btn9">Generate o/p</button>  
+    </div>
+    <div class="hidden text-primary ml-5" id="ninthAnswer"></div>
+
+
+    <h5 class="mt-5"> Q10-Write a JavaScript program to construct the following pattern, using a nested for loop.</h5>
+    <div class="input-group mb-3">
+        
+    <button class="btn btn-primary mx-3" id="btn10">Generate o/p</button>  
+    </div>
+    <div class="hidden text-primary ml-5" id="tenthAnswer"></div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
